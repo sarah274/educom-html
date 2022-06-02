@@ -1,0 +1,62 @@
+<form method="POST"
+        action="https://api.dev-master.ninja/html/form">
+
+        <input type="hidden" name="id" value="this is a hidden ID">
+        <fieldset>
+            <legend><b>Course Informtion</legend></b>
+            Code: <input type="text" name="code" value=""><br>
+            Do you like HTML?
+            <select name="YouLikeHtml">
+                <option disabled selected>--Choose one --</option>
+                <option value="Y">Yes</option>
+                <option value="N">No</option>
+            </select>
+            <br>
+
+            Language area:
+            <select name="YourLanguage">
+                <option disabled selected>--Choose One</option>
+                <optgroup label="Francais">
+                    <option value="fr-BE">Belgique</Option>
+                    <option value="fr-FR">France</option>
+                </optgroup>
+                <optgroup label="Nederlands">
+                    <option value="nl-BE">Belgie</option>
+                    <option value="nl-NL">Nederland</option>
+                </optgroup>
+                    <option value="en-EN">English</option>
+            </select>
+        </fieldset>
+        
+             <br>
+             <b>Your Comments:</b> <br>
+             <textarea name="comments" rows="5" cols="60"></textarea>
+             <br><br>
+             <b>Your score: </b> <br>
+             <input type="radio" name="score" value="10">10
+             <input type="radio" name="score" value="20">20
+             <input type="radio" name="score" value="30" checked>30 <input type="radio" name="score" value="40">40
+             <input type="radio" name="score" value="50">50
+             <br><br>
+
+             <b>Browser (datalist): </b><br>
+             <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+        
+    <br><br>
+   <b> Food: </b> <br>
+        <input type="checkbox" name="food1" value="Spaghetti">I like spaghetti<br>
+        <input type="checkbox" name="food2" value="Bread">I like bread<br>
+        <input type="checkbox" name="food3" value="Chicken" checked>I don't like Chicken
+<br><br>    
+    <b>Your age: </b>
+    <textarea name="comments" rows="1" cols="10"></textarea><br><br>
+    
+    <input type="subit" name="thebutton" value="Save!">
+    </form>
